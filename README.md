@@ -112,6 +112,7 @@ myapp/
 └── README.md
 
 
+
 💡 Notlar
 
 Uygulama geliştirme ortamında SQLite3 veritabanı kullanır.
