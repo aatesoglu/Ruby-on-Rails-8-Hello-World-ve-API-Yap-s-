@@ -19,7 +19,6 @@ Amaç, bir Rails projesinde hem klasik MVC yapısını hem de API mantığını 
 
 1.Depoyu klonla
 git clone https://github.com/aatesoglu/Ruby-on-Rails-8-Hello-World-ve-API-Yap-s-.git
-cd myapp
 
 2. Gerekli Bağımlılıkları Yükle
 bundle install
@@ -123,8 +122,8 @@ myapp/
 ├── config/routes.rb         ← API + arayüz yönlendirmeleri
 └── README.md
 
-💡 Notlar
+## 💡 Notlar
 
-Uygulama geliştirme ortamında SQLite3 veritabanı kullanır.
-Üretim ortamında PostgreSQL gibi kalıcı bir veritabanı tercih edilmelidir.
-API tüm yanıtları JSON formatında döndürür.
+-Uygulama geliştirme ortamında SQLite3 veritabanı kullanır.
+-Üretim ortamında PostgreSQL gibi kalıcı bir veritabanı tercih edilmelidir.
+-API tüm yanıtları JSON formatında döndürür.
