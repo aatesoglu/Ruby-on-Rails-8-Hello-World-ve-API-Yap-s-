@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  distribution_mode: 1
+  status: 1
+  start_date: 2025-10-21 18:26:40
+  end_date: 2025-10-21 18:26:40
+  settings: 
+  project: one
+  scale: one
+
+two:
+  title: MyString
+  description: MyText
+  distribution_mode: 1
+  status: 1
+  start_date: 2025-10-21 18:26:40
+  end_date: 2025-10-21 18:26:40
+  settings: 
+  project: two
+  scale: two

@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  item_type: 1
+  order: 1
+  options: 
+  scale: one
+
+two:
+  content: MyText
+  item_type: 1
+  order: 1
+  options: 
+  scale: two

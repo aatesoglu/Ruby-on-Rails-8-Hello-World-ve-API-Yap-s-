@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  transaction_type: 1
+  amount: 1
+  balance_after: 1
+  description: MyString
+  user: one
+  project: one
+
+two:
+  transaction_type: 1
+  amount: 1
+  balance_after: 1
+  description: MyString
+  user: two
+  project: two

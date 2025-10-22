@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  doi_identifier: MyString
+  version: MyString
+  language: MyString
+  category: MyString
+  item_count: 1
+  metadata: 
+  status: 1
+  user: one
+
+two:
+  title: MyString
+  description: MyText
+  doi_identifier: MyString
+  version: MyString
+  language: MyString
+  category: MyString
+  item_count: 1
+  metadata: 
+  status: 1
+  user: two

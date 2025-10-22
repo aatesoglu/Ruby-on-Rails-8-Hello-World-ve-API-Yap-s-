@@ -1,0 +1,14 @@
+class CreateProjects < ActiveRecord::Migration[8.0]
+  def change
+    create_table :projects do |t|
+      t.string :title
+      t.text :description
+      t.integer :status
+      t.integer :credit_allocated
+      t.integer :credit_used
+      t.references :user, null: false, foreign_key: true
+
+      t.timestamps
+    end
+  end
+end
