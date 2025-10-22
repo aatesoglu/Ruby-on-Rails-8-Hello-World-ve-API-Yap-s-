@@ -32,55 +32,67 @@ rails db:migrate
 rails server
 # veya
 rails s
-# Tarayıcıda görüntüle
+```
+
+### 5. Tarayıcıda Görüntüle
+```
 http://localhost:3000
+```
 
-📌 Not: Eğer launchy hatası alırsan:
-bundle install --gemfile ./Gemfile
+> **📌 Not:** Eğer `launchy` hatası alırsan:
+> ```bash
+> bundle install --gemfile ./Gemfile
+> ```
 
-🧠 Teknik Bilgiler
+---
+
+## 🧠 Teknik Bilgiler
+
 - **Ruby on Rails 8:** MVC mimarisiyle geliştirilmiş modern web framework
 - **Active Record (ORM):** Ruby nesneleriyle veritabanı tablolarını eşleştirir
-- **Controller:** Api::V1::ScaleItemsController dosyası CRUD işlemlerini yürütür
-- **View (Hello World):** welcome#index rotası üzerinden basit metin döndürür
-- **Route:** config/routes.rb dosyasında hem root hem API endpoint'leri tanımlıdır
+- **Controller:** `Api::V1::ScaleItemsController` dosyası CRUD işlemlerini yürütür
+- **View (Hello World):** `welcome#index` rotası üzerinden basit metin döndürür
+- **Route:** `config/routes.rb` dosyasında hem root hem API endpoint'leri tanımlıdır
 
-⚙️ API Yapısı
+---
 
-Proje, app/controllers/api/v1/ dizininde bulunan 8 adet model tabanlı controller içerir.
-Temel API Yolu
+## ⚙️ API Yapısı
+
+Proje, `app/controllers/api/v1/` dizininde bulunan 8 adet model tabanlı controller içerir.
+
+### Temel API Yolu
+```
 /api/v1/
+```
 
-Mevcut Modeller
+### Mevcut Modeller
 
-User
-Project
-Scale
-Survey
-Analysis
-CreditTransaction
-Response
-ScaleItem
+- `User`
+- `Project`
+- `Scale`
+- `Survey`
+- `Analysis`
+- `CreditTransaction`
+- `Response`
+- `ScaleItem`
 
 Her model, ilişkili tabloyla etkileşim kurar ve JSON formatında veri döndürür.
 
-🧩 Örnek Endpoint (ScaleItem)
+---
 
-GET → /api/v1/scale_items
-Tüm öğeleri listeler.
+## 🧩 Örnek Endpoint (ScaleItem)
 
-POST → /api/v1/scale_items
-Yeni öğe oluşturur.
+| Method | Endpoint | Açıklama |
+|--------|----------|----------|
+| `GET` | `/api/v1/scale_items` | Tüm öğeleri listeler |
+| `POST` | `/api/v1/scale_items` | Yeni öğe oluşturur |
+| `PUT` | `/api/v1/scale_items/:id` | Belirli bir öğeyi günceller |
+| `DELETE` | `/api/v1/scale_items/:id` | Bir öğeyi siler |
 
-PUT → /api/v1/scale_items/:id
-Belirli bir öğeyi günceller.
+---
 
-DELETE → /api/v1/scale_items/:id
-Bir öğeyi siler.
-
-
-🧱 Proje Dizin Yapısı
-
+## 🧱 Proje Dizin Yapısı
+```
 myapp/
 │
 ├── app/
@@ -105,18 +117,14 @@ myapp/
 │   │   ├── response.rb
 │   │   └── scale_item.rb
 │   └── views/welcome/
-│       └── index.html.erb   ← “Hello World” sayfası
+│       └── index.html.erb   ← "Hello World" sayfası
 │
 ├── db/migrate/              ← SQLite3 uyumlu migration dosyaları
 ├── config/routes.rb         ← API + arayüz yönlendirmeleri
 └── README.md
 
-
-
 💡 Notlar
 
 Uygulama geliştirme ortamında SQLite3 veritabanı kullanır.
-
 Üretim ortamında PostgreSQL gibi kalıcı bir veritabanı tercih edilmelidir.
-
 API tüm yanıtları JSON formatında döndürür.
